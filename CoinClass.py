@@ -26,3 +26,4 @@ class Coin:
 
     def get_sideup(self):
             return self.sideup
+            

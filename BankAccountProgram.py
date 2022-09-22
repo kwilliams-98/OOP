@@ -7,13 +7,13 @@ def main():
    # Get the starting balance.
    start_bal = float(input('Enter your starting balance: '))
 
-   # Create a BankAccount object.
+   # Create a BankAccount object. (actual instance of the bank account class!)
    savings = bc.BankAccount(start_bal)
 
    # Deposit the user's paycheck.
    pay = float(input('How much were you paid this week? '))
    print('I will deposit that into your account.')
-   savings.deposit(pay)
+   savings.deposit(pay) #again, make sure you use the INSTANCE of the object that you created earlier!
 
    # Display the balance.
    print('Your account balance is $', format(savings.get_balance(), ',.2f'),
